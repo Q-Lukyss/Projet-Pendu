@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./penduTest.css">
+    <script src="./penduv2.js" defer></script>
+    <title>Pendu</title>
+</head>
+<body>
+    <div class="pendu-container">
+        <div class="pendu"></div>
+    </div>
+    
+    <main>
+        <div>
+            <label for="difficulty">Choisir la difficulté</label>
+        <select name="difficulty" id="difficulty">
+            <option value="normal" selected>Normale</option>
+            <option value="hard">Difficile</option>
+            <option value="hardcore">Hardcore</option>
+            <option value="cyka">Cyka</option>
+        </select>
+        </div>
+        <div class="word">
+          
+            <input type="password" placeholder="mot a deviner" class='word_to_guess'/>
+            <div class="btn btn_record_word" onclick="storeWordToGuess()">Choisir le mot</div>
+        </div>
+        <div class="box-alphabet"></div>
+    </main>
+</body>
+</html>
